@@ -93,4 +93,3 @@ Per executar la maquina fes la seguent ordre:
 docker run --rm --name ldap -h ldap --network sshnet -d raulbaena/shh:ldapserver 
 ```
 
-## Comandes de 
