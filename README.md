@@ -125,7 +125,13 @@ Password:
 ```
 Com podem veure s'autenticat l'usuari pere.
 
-
+## Execucio
+```
+docker network create sshnet
+docker run --rm --name ldap -h ldap --network sshnet -d raulbaena/shh:ldapserver 
+docker run --rm --name ssh -h ssh --network sshnet -it raulbaena/shh:server 
+docker run --rm --name host -h host --network sshnet -it raulbaena/shh:hostpam
+```
 
 
 
