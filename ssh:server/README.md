@@ -25,7 +25,5 @@ userdeny --> Fitxer on es posen els usuaris que no tenen acces ssh
 Per executar la maquina fes la seguent ordre:
 
 ```
-docker run --rm --name ssh -h ssh --network sshnet -d raulbaena/shh:server 
+docker run --rm --name ssh -h ssh --network sshnet -it raulbaena/shh:server 
 ```
-
-## Comandes de 
